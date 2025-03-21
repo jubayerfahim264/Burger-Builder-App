@@ -1,3 +1,21 @@
+📝 Description:
+A dynamic Burger Builder App built with React. This project allows users to create their custom burgers by adding or removing ingredients, view the total price in real-time, and place an order. It demonstrates React core concepts like components, state management, props, conditional rendering, and basic routing.
+
+📌 Features:
+✅ Add/Remove Ingredients
+✅ Real-time Price Calculation
+✅ Responsive Design
+✅ React Router for Navigation (optional)
+✅ Simple Order Summary Modal
+✅ Clean Component-Based Architecture
+
+🚀 Tech Stack:
+⚛️ React (Functional/Class Components)
+🎨 CSS / SCSS for styling
+🪝 React Hooks (optional, for state & effects)
+🌐 React Router (optional, for navigation)
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
