@@ -35,12 +35,12 @@ const Header = (args) => {
                 📦 Orders
               </NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink to="/signup" className="nav-btn">
+                📦Sign up
+              </NavLink>
+            </NavItem>
           </Nav>
-          <NavbarText>
-            <a href="#" className="nav-btn">
-              Login
-            </a>
-          </NavbarText>
         </Navbar>
       </div>
     </>

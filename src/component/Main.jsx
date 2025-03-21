@@ -4,6 +4,7 @@ import Orders from "./Orders/Orders";
 import Checkout from "./Orders/Checkout/Checkout";
 import { Route, Routes } from "react-router-dom";
 import { withNavigation } from "./Orders/Checkout/withNavigation";
+import Auth from "./Auth/Auth";
 
 const CheckoutWithNav = withNavigation(Checkout);
 
@@ -15,7 +16,8 @@ const Main = () => {
         <Routes>
           <Route path="/" element={<BurgerBuilder />} />
           <Route path="/order" element={<Orders />} />
-          <Route path="/checkout" element={<CheckoutWithNav />} />{" "}
+          <Route path="/checkout" element={<CheckoutWithNav />} />
+          <Route path="/signup" element={<Auth />} />
         </Routes>
       </div>
     </>
