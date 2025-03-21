@@ -1,0 +1,13 @@
+.NavLink {
+  text-decoration: none;
+  color: #f3f3f3;
+  margin: 0 10px;
+  font-size: 20px;
+}
+.nav-btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #ffeaea;
+  color: #061017 !important;
+  font-weight: 600;
+}

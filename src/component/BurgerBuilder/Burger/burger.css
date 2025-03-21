@@ -1,0 +1,17 @@
+.burger {
+  width: 100%;
+  margin: auto;
+  height: 350px;
+  overflow: scroll;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.burger::-webkit-scrollbar {
+  display: none;
+}
+.burger p {
+  text-align: center;
+}
