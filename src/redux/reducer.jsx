@@ -1,4 +1,4 @@
-import Orders from "../component/Orders/Orders";
+// import Orders from "../component/Orders/Orders";
 import * as actionTypes from "./actionTypes";
 
 const INGREDIENT_PRICE = {
@@ -17,6 +17,10 @@ const INITIAL_STATE = {
   orderError: false,
   totalPrice: 80,
   purchasable: false,
+  token: null,
+  userId: null,
+  authLoading: false,
+  authFailedMsg: null,
 };
 
 export const reducer = (state = INITIAL_STATE, action) => {
@@ -74,7 +78,6 @@ export const reducer = (state = INITIAL_STATE, action) => {
           id: key,
         });
       }
-
       return {
         ...state,
         order: order,
@@ -86,6 +89,29 @@ export const reducer = (state = INITIAL_STATE, action) => {
         ...state,
         orderError: true,
         ordersLoading: false,
+      };
+    case actionTypes.AUTH_SUCCESS:
+      return {
+        ...state,
+        token: action.payload.token,
+        userId: action.payload.userId,
+      };
+    case actionTypes.AUTH_LOGOUT:
+      return {
+        ...state,
+        authFailedMsg: null,
+        token: null,
+        userId: null,
+      };
+    case actionTypes.AUTH_LOADING:
+      return {
+        ...state,
+        authLoading: action.payload,
+      };
+    case actionTypes.AUTH_FAILED:
+      return {
+        ...state,
+        authFailedMsg: action.payload,
       };
     default:
       return state;

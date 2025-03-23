@@ -39,10 +39,13 @@ export const orderLoadFaild = () => {
   };
 };
 
-export const fetchOrder = () => (dispatch) => {
+export const fetchOrder = (token, userId) => (dispatch) => {
+  const queryParams = '&orderBy="userId"&equalTo="' + userId + '"';
   axios
     .get(
-      "https://burger-builder-app-c1d0f-default-rtdb.firebaseio.com/order.json"
+      "https://burger-builder-app-c1d0f-default-rtdb.firebaseio.com/order.json?auth=" +
+        token +
+        queryParams
     )
     .then((response) => {
       dispatch(loadOrders(response.data));
