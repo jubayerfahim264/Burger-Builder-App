@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! My name is Jubayer Fahim and I'm a Front-end-=Developer, from Bangladesh</h2>
+<h2 align="left">Hi 👋! My name is Jubayer Fahim and I'm a Front-end-Developer, from Bangladesh</h2>
 
 ###
 
